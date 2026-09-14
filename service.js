@@ -1,6 +1,6 @@
 import TrackPlayer, { Event } from 'react-native-track-player';
 
-// Lắng nghe và xử lý các thao tác điều khiển nhạc từ bên ngoài ứng dụng
+// Lắng nghe các sự kiện điều khiển nhạc từ màn hình khóa (Lockscreen) hoặc tai nghe
 module.exports = async function () {
   TrackPlayer.addEventListener(Event.RemotePlay, () => TrackPlayer.play());
   TrackPlayer.addEventListener(Event.RemotePause, () => TrackPlayer.pause());
